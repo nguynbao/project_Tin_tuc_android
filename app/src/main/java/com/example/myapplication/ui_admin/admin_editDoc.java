@@ -74,8 +74,9 @@ public class admin_editDoc extends AppCompatActivity {
             String content = edPostDescription.getText().toString();
             String fileUrl = eduploadDoc.getText().toString();
             Document doc = new Document(title, fileUrl, content);
+            doc.setId(docId);
             Executors.newSingleThreadExecutor().execute(() -> {
-                docDao.insert(doc);
+                docDao.update(doc);
                 runOnUiThread(() -> {
                     setResult(RESULT_OK);
                 });
