@@ -25,7 +25,7 @@ public class adapter_comment extends RecyclerView.Adapter<adapter_comment.ViewHo
         this.commentList = comments;
         notifyDataSetChanged();
     }
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -26,7 +26,7 @@ public class adapter_AllPost extends RecyclerView.Adapter<adapter_AllPost.ViewHo
         this.context = context;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
